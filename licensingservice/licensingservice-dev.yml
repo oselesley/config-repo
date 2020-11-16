@@ -7,12 +7,6 @@ management:
       exposure:
         include: "*"
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-
 spring:
   profiles:
     active: dev
