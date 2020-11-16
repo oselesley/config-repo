@@ -1,6 +1,12 @@
 tracer:
   property: I AM THE DEFAULT
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 spring:
   jpa:
     database: POSTGRESQL
