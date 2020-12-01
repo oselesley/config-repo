@@ -7,7 +7,6 @@ management:
       exposure:
         include: "*"
 
-
 eureka:
   instance:
     preferIpAddress: true
