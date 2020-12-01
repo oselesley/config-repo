@@ -8,6 +8,18 @@ management:
         include: "*"
 
 spring:
+  application:
+    name: organizationservice
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
   profiles:
     active: "dev"
   jpa:
