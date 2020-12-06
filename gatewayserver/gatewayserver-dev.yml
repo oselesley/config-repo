@@ -28,7 +28,6 @@ spring:
     gateway:
       discovery:
         locator: #A
-          enabled: true 
           lower-case-service-id: true
         routes:
           - id: organization #A

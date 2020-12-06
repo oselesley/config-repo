@@ -13,4 +13,4 @@ spring:
             discovery:
                 locator: #A
                     enabled: true 
-                    lowerCaseServiceId: true
+                    lower-case-service-id: true
