@@ -2,6 +2,11 @@ tracer:
     property: I AM GATEWAY SERVER DEV
 
 management:
+  endpoint:
+    gateway:
+      enabled: true
+    refresh:
+      enabled: true
   endpoints:
     web:
       exposure:

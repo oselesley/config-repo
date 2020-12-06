@@ -2,6 +2,9 @@ tracer:
   property: I AM DEV
 
 management:
+  endpoint:
+    refresh:
+      enabled: true
   endpoints:
     web:
       exposure:
