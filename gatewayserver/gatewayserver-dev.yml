@@ -29,7 +29,7 @@ spring:
       discovery:
         locator: #A
           enabled: true 
-          lowerCaseServiceId: true
+          lower-case-service-id: true
         routes:
           - id: organization #A
             uri: lb://organizationservice #B 
