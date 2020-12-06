@@ -8,10 +8,12 @@ management:
         include: "*"
 
 spring:
-    cloud:
-        gateway:
-            discovery:
-                locator: #A
-                    enabled: true 
-                    lowerCaseServiceId: true
+  profiles:
+    active: dev
+  cloud:
+    gateway:
+      discovery:
+        locator: #A
+          enabled: true 
+          lowerCaseServiceId: true
 
