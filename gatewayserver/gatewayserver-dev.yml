@@ -12,6 +12,15 @@ management:
       exposure:
         include: "*"
 
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2500
+            
 spring:
   profiles:
     active: dev
