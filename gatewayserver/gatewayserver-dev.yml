@@ -20,7 +20,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 2500
-            
+
 spring:
   profiles:
     active: dev
@@ -31,13 +31,13 @@ spring:
           enabled: true 
           lowerCaseServiceId: true
         routes:
-          - id: organization-service #A
+          - id: organization #A
             uri: lb://organizationservice #B 
             predicates: #C
             - Path=/organization/**
             filters: #D
             - RewritePath=/organization/(?<path>.*), /$\{path} #E
-          - id: licensing-service #A
+          - id: license #A
             uri: lb://licensingservice #B 
             predicates: #C
             - Path=/licensing/**
