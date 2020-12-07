@@ -6,10 +6,10 @@ spring:
     database: POSTGRESQL
     show-sql: true
   datasource:
-    url: jdbc:postgresql://database:5432/eagle_eye_prod
+    url: jdbc:postgresql://database:5433/eagle_eye_prod
     platform: postgres
     username: postgres_prod
-      password: postgr@s_prod
+    password: postgr@s_prod
     driverClassName: org.postgresql.Driver
     tomcat:
       test-while-idle: true
