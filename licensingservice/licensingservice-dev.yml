@@ -17,7 +17,7 @@ spring:
     database: POSTGRESQL
     show-sql: true
   datasource:
-    url: jdbc:postgresql://database:5432/eagle_eye_dev
+    url: jdbc:postgresql://database:5434/eagle_eye_dev
     platform: postgres
     username: postgres_dev
     password: postgr@s_dev

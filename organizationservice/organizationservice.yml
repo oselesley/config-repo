@@ -7,7 +7,7 @@ spring:
     database: POSTGRESQL
     show-sql: true
   datasource:
-    url: jdbc:postgresql://organizationdb:5875/eagle_eye_local
+    url: jdbc:postgresql://organizationdb:5433/eagle_eye_local
     platform: postgres
     username: postgres
     password: postgr@s
