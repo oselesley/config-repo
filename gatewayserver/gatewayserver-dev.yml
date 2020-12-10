@@ -11,24 +11,25 @@ management:
         include: "*"
 
 spring:
- gateway: 
-  discovery:
-    locator:
-      enabled: true
-      lowerCaseServiceId: true 
-    routes:
-    - id: licensing-service #A
-      uri: lb://licensingservice #B 
-      predicates: #C
-      - Path=/licensing/**
-      filters: #D
-      - RewritePath=/licensing/(?<path>.*), /$\{path} #E
-    - id: organization-service #A
-      uri: lb://organizationservice #B 
-      predicates: #C
-      - Path=/organization/**
-      filters: #D
-      - RewritePath=/organization/(?<path>.*), /$\{path} #E
+ cloud:
+  gateway: 
+    discovery:
+      locator:
+        enabled: true
+        lowerCaseServiceId: true 
+      routes:
+      - id: licensing-service #A
+        uri: lb://licensingservice #B 
+        predicates: #C
+        - Path=/licensing/**
+        filters: #D
+        - RewritePath=/licensing/(?<path>.*), /$\{path} #E
+      - id: organization-service #A
+        uri: lb://organizationservice #B 
+        predicates: #C
+        - Path=/organization/**
+        filters: #D
+        - RewritePath=/organization/(?<path>.*), /$\{path} #E
 
 hystrix:
   command:
