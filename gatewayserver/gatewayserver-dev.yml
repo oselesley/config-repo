@@ -14,10 +14,10 @@ spring:
  cloud:
   gateway: 
     discovery:
-      locator:
-        enabled: true
-        lowerCaseServiceId: true 
-    routes:
+      locator: # discovery locator enables automated mapping whereby
+        enabled: true # gateway exposes the serviceId only if the service is running
+        lowerCaseServiceId: true # If we define routes manually (as below), the one we defined will always show even if the service is not available. remove the locator config to stop automated mapping
+    routes: # even if 
     - id: licensing-service #A
       uri: lb://licensingservice #B 
       predicates: #C
