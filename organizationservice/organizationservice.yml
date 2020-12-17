@@ -2,7 +2,7 @@ tracer:
   property: I AM THE ORGANIZATION SERVICE DEFAULT
 
   
-spring:
+security:
   oauth2: 
     resource:
       userInfoUri: "http://localhost:8901/user"
