@@ -6,6 +6,8 @@ security:
   oauth2: 
     resource:
       userInfoUri: "http://localhost:8901/user"
+      
+spring:
   jpa:
     database: POSTGRESQL
     show-sql: true
