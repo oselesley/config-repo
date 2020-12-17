@@ -12,6 +12,9 @@ management:
 
 
 spring:
+  oauth2: 
+    resource:
+      userInfoUri: "http://localhost:8901/user"
   profiles:
     active: "dev"
   jpa:
